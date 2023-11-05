@@ -20,12 +20,17 @@ setInterval(setClock, 1000);
 
 const switchTheme = (evt) =>{
     const switchBtn= evt.target;
-    if (switchBtn.textContent.toLowerCase() === "light"){
+    if (switchBtn.textContent.toLowerCase() == "dark"){
+        switchBtn.textContent = "pink";
+
+        document.documentElement.setAttribute("data-theme","pink");
+
+    }else  if (switchBtn.textContent.toLowerCase() == "light"){
         switchBtn.textContent = "dark";
 
         document.documentElement.setAttribute("data-theme","dark");
 
-    }else {
+    }else if (switchBtn.textContent.toLowerCase() == "pink"){
         switchBtn.textContent = "light";
 
         document.documentElement.setAttribute("data-theme","light");

@@ -5,6 +5,12 @@
 [data-theme="dark"]{
     --main-bg-color:#1e1f26;
     --main-text-color:#ccc;
+
+}
+[data-theme="pink"]{
+    --main-bg-color:#F859CD;
+    --main-text-color:#C60091;
+
 }
 
 *{
